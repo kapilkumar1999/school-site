@@ -1,0 +1,143 @@
+<div class="container">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url("http://www.pptback.com/uploads/the-meeting-with-school-backgrounds-powerpoint.jpg");
+            background-size: cover;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="/principalmessage/">Principal's Message</a>
+            <a href="/admission/">Admission</a>
+            <a href="/rulesregulations/">Rules and Relugation</a>
+            <a href="/activities_work/">Activities</a>
+            <a href="/gallery/">Gallery</a>
+            <a href="/Reachus/">Reach us</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Login
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/student/">Student's login</a>
+                    <a href="/teacher/">Teacher's login</a>
+                </div>
+            </div>
+        </div>
+<br>
+<h1 style="color:white; text-align:center">GALLERY</h1>
+<img src="http://www.udaipurtimes.com/wp-content/uploads/2011/11/seedling-school5.jpg" width="320" height="250" border="5px">
+<img src="http://cms.ipressroom.com.s3.amazonaws.com/173/files/20161/56be6f27299b5029f4022617_UCLA+Community+school+students+in+class/UCLA+Community+school+students+in+class_mid.jpg" width="320" height="250" border="5px">
+<img src="http://static.guim.co.uk/sys-images/Guardian/About/General/2011/7/17/1310910001520/School-sports-day-race-007.jpg" width="320" height="250" border="5px">
+<img src="https://i.ytimg.com/vi/kkkN44GnfhU/maxresdefault.jpg" width="320" height="250" border="5px">
+<img src="http://mediad.publicbroadcasting.net/p/kcbx/files/styles/x_large/public/201411/UC_student_rally.png" width="320" height="250" border="5px">
+<img src="http://www.mgrtv.com/wp-content/uploads/2014/02/19MA_RALLY_CITY_1761747f.jpg" width="320" height="250" border="5px">
+<img src="http://www.tripurainfoway.com/viewimage.php?src=http://www.tripurainfoway.com/news_pic/2014/Students%20of%20UK%20Academy%20stage%20cleanliness%20drive%20at%20school%20premises%20(2)-1414750702.jpg&w=567" width="320" height="250" border="5px">
+<img src="http://www.transitionsabroad.com/listings/work/esl/articles/images/teaching-students-thailand.jpg" width="320" height="250" border="5px">
+<img src="https://www.oxbridgeessays.com/wordpress/wp-content/uploads/2012/04/Fotolia_21076921_XS-1.jpg" width="320" height="250" border="5px">
+<img src="http://www.canadaclubjp.com/blog/files/cimg46spk73.jpg" width="320" height="250" border="5px">
+<img src="http://www.cwaldorf.org/festivals_6_2611479162.jpg" width="320" height="250" border="5px">
+<img src="https://www.tes.com/sites/default/files/styles/news_article_hero/public/news_article_images/school_trip.jpg?itok=o0esmn-M" width="320" height="250" border="5px">
+<script>
+    var myIndex = 0;
+    carousel();       
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+    }
+</script>
+</body>
+<footer>
+    <p style="color:midnightblue;">Follow us on : </p>
+    <a href="https://www.facebook.com/login/">
+        <img src="http://freevectorlogo.net/wp-content/uploads/2011/06/facebook-icon-logo-vector-400x400.png" height="30"
+            width="30">
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <img src="http://pngimg.com/uploads/gmail_logo/gmail_logo_PNG6.png" heighj="30" width="30">
+    </a>
+    <a href="https://plus.google.com/discover?hl=en">
+        <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/012012/google_plus-01.png?itok=4R35nkQu" height="30"
+            width="30">
+    </a>
+    <a href="https://twitter.com/login?lang=en">
+        <img src="https://i.pinimg.com/originals/f3/6f/51/f36f511b261596a2debe85d844bb1b87.png" height="30" width="30">
+    </a>
+
+</footer>

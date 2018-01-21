@@ -1,0 +1,173 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     body {
+            background-image: url("http://www.pptback.com/uploads/the-meeting-with-school-backgrounds-powerpoint.jpg");
+            background-size: cover;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="/principalmessage/">Principal's Message</a>
+            <a href="/admission/">Admission</a>
+            <a href="/rulesregulations/">Rules and Relugation</a>
+            <a href="/activities_work/">Activities</a>
+            <a href="/gallery/">Gallery</a>
+            <a href="/Reachus/">Reach us</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Login
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/student/">Student's login</a>
+                    <a href="/teacher/">Teacher's login</a>
+                </div>
+            </div>
+        </div>
+		<br>
+        <a href="">
+            <img src="https://www.vistaprint.in/any/preview/viewlogo.aspx?cnf=St.+Margret+Public+School&icid=989&csid=85&fsid=7&txid=7&tid=1&cfid=0&xcf=&arid=8&msid=0&drid=0&width=140&height=110"
+                align="left" height="125" width="140">
+        </a>
+        <a href="https://www.britishcouncil.in/">
+            <img src="http://translamacademyinternational.com/wp-content/uploads/2014/01/British-Council-logo.jpg" height="125"
+                width="125" align="right">
+        </a>
+
+
+
+        <h2 style="text-align:center;color:darkred;">
+            <b>
+                <font face="trebuchet ms">ST. MARGRET PUBLIC SCHOOL</b>
+        </h2>
+        </font>
+
+        <h3 style="text-align:center;color:indianred;">
+            <b>
+                <font face="trebuchet ms">ROHINI,NEW DELHI</b>
+        </h3>
+        </font>
+        <p> </p>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<div class="w3-content w3-section" style="max-width:500px">
+
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="http://ramagyaschool.com/wp-content/uploads/2014/11/transport.jpg"
+                    height="400" width="500">
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="https://d3irk3g7luh32r.cloudfront.net/wp-content/uploads/sites/11/2016/10/Schools-in-Society-480x320.jpg?v=7833"
+                    height="400" width="500">
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="http://www.psd70.ab.ca/image.php?t=banners&s=1920&f=StudentTransportation.png&site_id=1"
+                    height="400" width="500">
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="http://dpsgrnoida.com/DPSGrNoida/UserSpace/UserName/dpsnadmin/DynamicFolder/HomePage_New/events/image/annual1-2-12-13.JPG"
+                    height="400" width="500">
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="http://dpsgrnoida.com/DPSGrNoida/UserSpace/PhotoGallery/ATHLETIC%20MEET%202017-VALEDICTORY%20CEREMONY/athletic%20meet%20day-3-8.jpg"
+                    height="400" width="500">
+                <img class="mySlides w3-animate-fading" style="max-width:95%;border:6px double #545565;" src="http://dpsgrnoida.com/DPSGrNoida/UserSpace/PhotoGallery/Alumni%20Meet%202012/alumni2013-6.JPG"
+                    height="400" width="500">
+
+            </div>
+ <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+    }
+ </script>
+ </body>
+ <br>
+ <footer>
+    <p style="color:midnightblue;">Follow us on : </p>
+    <a href="https://www.facebook.com/login/">
+        <img src="http://freevectorlogo.net/wp-content/uploads/2011/06/facebook-icon-logo-vector-400x400.png" height="30"
+            width="30">
+    </a>
+    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <img src="http://pngimg.com/uploads/gmail_logo/gmail_logo_PNG6.png" heighj="30" width="30">
+    </a>
+    <a href="https://plus.google.com/discover?hl=en">
+        <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/012012/google_plus-01.png?itok=4R35nkQu" height="30"
+            width="30">
+    </a>
+    <a href="https://twitter.com/login?lang=en">
+        <img src="https://i.pinimg.com/originals/f3/6f/51/f36f511b261596a2debe85d844bb1b87.png" height="30" width="30">
+    </a>
+
+</footer>
